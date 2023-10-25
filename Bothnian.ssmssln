@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# SQL Server Management Studio Solution File, Format Version 19.00
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "Bothnian", "Bothnian\Bothnian.ssmssqlproj", "{43DC5286-CC36-4C1E-9630-A2ED90835207}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|Default = Default|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43DC5286-CC36-4C1E-9630-A2ED90835207}.Default|Default.ActiveCfg = Default
+		{9E4E0C1C-A738-4B34-BC45-EC6E1E62FB40}.Default|Default.ActiveCfg = Default
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4B811C06-F6E0-46C5-B5FA-932392F108FD}
+	EndGlobalSection
+EndGlobal
