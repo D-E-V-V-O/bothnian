@@ -1,4 +1,4 @@
-INSERT INTO NounStems
+INSERT INTO NounStem
 (
  ProtoBothnian,
  Överkalixmål,
