@@ -38,8 +38,8 @@ CREATE TABLE Överkalixmål
 	SingularDefinite	VARCHAR(64),
 	PluralIndefinite	VARCHAR(64),
 	PluralDefinite		VARCHAR(64),
-	SingularDative		VARCHAR(64),
-	PluralDative		VARCHAR(64)
+	SingularDefiniteDative	VARCHAR(64),
+	PluralDefiniteDative	VARCHAR(64)
 )
 
 IF EXISTS
@@ -59,8 +59,8 @@ CREATE TABLE Lulemål
 	SingularDefinite	VARCHAR(64),
 	PluralIndefinite	VARCHAR(64),
 	PluralDefinite		VARCHAR(64),
-	SingularDative		VARCHAR(64),
-	PluralDative		VARCHAR(64)
+	SingularDefiniteDative	VARCHAR(64),
+	PluralDefiniteDative	VARCHAR(64)
 )
 
 IF EXISTS
@@ -80,8 +80,8 @@ CREATE TABLE Pitemål
 	SingularDefinite	VARCHAR(64),
 	PluralIndefinite	VARCHAR(64),
 	PluralDefinite		VARCHAR(64),
-	SingularDative		VARCHAR(64),
-	PluralDative		VARCHAR(64)
+	SingularDefiniteDative	VARCHAR(64),
+	PluralDefiniteDative	VARCHAR(64)
 )
 
 COMMIT TRAN
