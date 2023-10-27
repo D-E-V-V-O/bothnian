@@ -11,13 +11,13 @@ DROP TABLE NounStem
 
 CREATE TABLE NounStem
 (
-	ProtoBothnian	VARCHAR(64) PRIMARY KEY,
-	Överkalixmål		VARCHAR(64),
-	Lulemål			VARCHAR(64),
-	Pitemål			VARCHAR(64),
-	FOREIGN KEY (Överkalixmål) REFERENCES Överkalixmål(Stem),
-	FOREIGN KEY (Lulemål)	REFERENCES Lulemål(Stem),
-	FOREIGN KEY (Pitemål)	REFERENCES Pitemål(Stem)
+	ProtoBothnian		VARCHAR(64) PRIMARY KEY,
+	Ã–verkalixmÃ¥l		VARCHAR(64),
+	LulemÃ¥l			VARCHAR(64),
+	PitemÃ¥l			VARCHAR(64),
+	FOREIGN KEY (Ã–verkalixmÃ¥l) REFERENCES Ã–verkalixmÃ¥l(Stem),
+	FOREIGN KEY (LulemÃ¥l)	REFERENCES LulemÃ¥l(Stem),
+	FOREIGN KEY (PitemÃ¥l)	REFERENCES PitemÃ¥l(Stem)
 	
 )
 
@@ -25,56 +25,63 @@ IF EXISTS
 (
 	SELECT	TABLE_NAME 
 	FROM	INFORMATION_SCHEMA.TABLES
-	WHERE	TABLE_NAME = 'Överkalixmål'
+	WHERE	TABLE_NAME = 'Ã–verkalixmÃ¥l'
 )
-DROP TABLE Överkalixmål
-CREATE TABLE Överkalixmål
+DROP TABLE Ã–verkalixmÃ¥l
+CREATE TABLE Ã–verkalixmÃ¥l
 (
-	Stem						VARCHAR(64) PRIMARY KEY,
-	SingularDefinite			VARCHAR(64),
-	PluralDefinite				VARCHAR(64),
-	SingularIndefinite			VARCHAR(64),
-	PluralIndefinite			VARCHAR(64),
-	SingularDefiniteDative		VARCHAR(64),
-	PluralDefiniteDative		VARCHAR(64)
-)
-
-IF EXISTS
-(
-	SELECT	TABLE_NAME 
-	FROM	INFORMATION_SCHEMA.TABLES
-	WHERE	TABLE_NAME = 'Lulemål'
-)
-DROP TABLE Lulemål
-CREATE TABLE Lulemål
-(
-	Stem						VARCHAR(64) PRIMARY KEY,
-	Gender						VARCHAR(16),
-	DeclinsionType				VARCHAR(8),
-	SingularDefinite			VARCHAR(64),
-	PluralDefinite				VARCHAR(64),
-	SingularIndefinite			VARCHAR(64),
-	PluralIndefinite			VARCHAR(64),
-	SingularDefiniteDative		VARCHAR(64),
-	PluralDefiniteDative		VARCHAR(64)
+	Stem			VARCHAR(64) PRIMARY KEY,
+	Gender			VARCHAR(16),
+	DefinitionSwedish	VARCHAR(64),
+	DefinitionEnglish	VARCHAR(64),
+	SingularIndefinite	VARCHAR(64),
+	SingularDefinite	VARCHAR(64),
+	PluralIndefinite	VARCHAR(64),
+	PluralDefinite		VARCHAR(64),
+	SingularDative		VARCHAR(64),
+	PluralDative		VARCHAR(64)
 )
 
 IF EXISTS
 (
 	SELECT	TABLE_NAME 
 	FROM	INFORMATION_SCHEMA.TABLES
-	WHERE	TABLE_NAME = 'Pitemål'
+	WHERE	TABLE_NAME = 'LulemÃ¥l'
 )
-DROP TABLE Pitemål
-CREATE TABLE Pitemål
+DROP TABLE LulemÃ¥l
+CREATE TABLE LulemÃ¥l
 (
-	Stem						VARCHAR(64) PRIMARY KEY,
-	SingularDefinite			VARCHAR(64),
-	PluralDefinite				VARCHAR(64),
-	SingularIndefinite			VARCHAR(64),
-	PluralIndefinite			VARCHAR(64),
-	SingularDefiniteDative		VARCHAR(64),
-	PluralDefiniteDative		VARCHAR(64)
+	Stem			VARCHAR(64) PRIMARY KEY,
+	Gender			VARCHAR(16),
+	DefinitionSwedish	VARCHAR(64),
+	DefinitionEnglish	VARCHAR(64),
+	SingularIndefinite	VARCHAR(64),
+	SingularDefinite	VARCHAR(64),
+	PluralIndefinite	VARCHAR(64),
+	PluralDefinite		VARCHAR(64),
+	SingularDative		VARCHAR(64),
+	PluralDative		VARCHAR(64)
+)
+
+IF EXISTS
+(
+	SELECT	TABLE_NAME 
+	FROM	INFORMATION_SCHEMA.TABLES
+	WHERE	TABLE_NAME = 'PitemÃ¥l'
+)
+DROP TABLE PitemÃ¥l
+CREATE TABLE PitemÃ¥l
+(
+	Stem			VARCHAR(64) PRIMARY KEY,
+	Gender			VARCHAR(16),
+	DefinitionSwedish	VARCHAR(64),
+	DefinitionEnglish	VARCHAR(64),
+	SingularIndefinite	VARCHAR(64),
+	SingularDefinite	VARCHAR(64),
+	PluralIndefinite	VARCHAR(64),
+	PluralDefinite		VARCHAR(64),
+	SingularDative		VARCHAR(64),
+	PluralDative		VARCHAR(64)
 )
 
 COMMIT TRAN
