@@ -1,14 +1,54 @@
 INSERT INTO NounStems
 (
- ProtoBothnian,
- Överkalixmål,
  Lulemål,
  Pitemål
 )
 VALUES
 (
-  hánd,
-  he:nT,
   hä́:t,
   hánd
+)
+INSERT INTO ProtoBothnian
+(
+ Stem,
+ Gender,
+ DefinitionSwedish,
+ DefinitionEnglish,
+ SingularIndefinite,
+ SingularDefinite,
+ PluralIndefinite,
+ PluralDefinite
+)
+VALUES
+(
+ 'hand-',
+ 'Feminine',
+ 'hand',
+ 'hand',
+ 'ha₁nd',
+ 'ha₁nda',
+ 'he₁nder',
+ 'he₁ndren'
+)
+INSERT INTO Överkalixmål
+(
+ Stem,
+ Gender,
+ DefinitionSwedish,
+ DefinitionEnglish,
+ SingularIndefinite,
+ SingularDefinite,
+ PluralIndefinite,
+ PluralDefinite
+)
+VALUES
+(
+ 'henT-',
+ 'Feminine',
+ 'hand',
+ 'hand',
+ 'he:nT',
+ 'he:nTa',
+ 'hender',
+ 'hendren'
 )
